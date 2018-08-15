@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c:Catalog
    xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
-   xmlns:proj="http://www.example.org/SuperHero-extension"
+   xmlns:sh="http://www.example.org/SuperHero-extension"
    xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/4.0/"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://reference.niem.gov/niem/resource/mpd/catalog/4.0/ mpd-catalog-4.0.xsd"
@@ -9,12 +9,11 @@
    
    <c:MPD c:mpdName="superhero-iepd" c:mpdVersionID="1" c:mpdClassURIList="iepd"
       c:mpdURI="http://www.example.org/niem/iepds/superhero/0">
-      <nc:DescriptionText>This IEPD shows how to create a basic extension schema file with one element that reuses a NIEM Core type.
-         The context of this IEPD is based on Superheros.</nc:DescriptionText>
+      <nc:DescriptionText>This IEPD shows how to create a basic extension schema file with one element that reuses a NIEM Core type, using a superhero as an example.</nc:DescriptionText>
       <c:MPDInformation>
          <c:AuthoritativeSource>
             <nc:EntityOrganization>
-               <nc:OrganizationName>Joint Staff J6, MilOps Domain Steward</nc:OrganizationName>
+               <nc:OrganizationName>Gotham Herald</nc:OrganizationName>
                <nc:OrganizationPrimaryContactInformation>
                   <nc:ContactWebsiteURI>http://www.example.org/</nc:ContactWebsiteURI>
                </nc:OrganizationPrimaryContactInformation>
@@ -24,8 +23,11 @@
          <c:StatusText>Beta</c:StatusText>
       </c:MPDInformation>
       <c:IEPConformanceTarget>
-         <c:HasDocumentElement c:qualifiedNameList="proj:SuperHero"/>
-         <c:IEPSampleXMLDocument c:pathURI="./iep-sample/SuperHero.xml"/>
+        <c:HasDocumentElement c:qualifiedNameList="sh:SuperHero"/>
+        <c:XMLSchemaValid>
+          <c:XMLCatalog c:pathURI="base-xsd/xml-catalog.xml"/>
+        </c:XMLSchemaValid>
+        <c:IEPSampleXMLDocument c:pathURI="iep-sample/SuperHero.xml"/>
       </c:IEPConformanceTarget>
       <c:ReadMe c:pathURI="readme.txt"/>
       <c:XMLCatalog c:pathURI="base-xsd/niem/xml-catalog.xml"/>
