@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sns:SuperHero xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
-               xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
-               xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
-               xmlns:sns="http://www.example.org/SuperHero-extension"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://www.example.org/SuperHero-extension ../base-xsd/extension/SuperHero-extension.xsd ">
+<sh:SuperHero
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:sh="http://www.example.org/SuperHero-extension">
   <nc:PersonName>
     <nc:PersonGivenName>Bruce</nc:PersonGivenName>
     <nc:PersonSurName>Wayne</nc:PersonSurName>
   </nc:PersonName>
-</sns:SuperHero>
+</sh:SuperHero>
