@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Catalog
-  xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
+  xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/1.0/"
   xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
   xmlns:sh="http://www.example.org/SuperHero-extension">
    

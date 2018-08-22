@@ -10,7 +10,7 @@
 
 	<xs:annotation>
 		<xs:documentation>This IEPD shows how to create a basic extension schema file with one element that reuses a NIEM Core type.
-			The context of this IEPD is based on Superheros.
+			The context of this IEPD is based on Superheroes.
 		</xs:documentation>
 	</xs:annotation>
 	
