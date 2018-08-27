@@ -2,7 +2,7 @@
 <xs:schema version="1.0" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="http://www.example.org/SuperHero-extension" 
-	xmlns:sns="http://www.example.org/SuperHero-extension"
+	xmlns:sh="http://www.example.org/SuperHero-extension"
 	xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
 	ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"
 	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"

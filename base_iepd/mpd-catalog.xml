@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <c:Catalog
   xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
-  xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
   xmlns:sh="http://www.example.org/SuperHero-extension">
    
    <c:MPD c:mpdName="superhero-iepd" c:mpdVersionID="1" c:mpdClassURIList="iepd"
       c:mpdURI="http://www.example.org/niem/iepds/superhero/0">
-      <nc:DescriptionText>This IEPD shows how to create a basic extension schema file with one element that reuses a NIEM Core type, using a superhero as an example.</nc:DescriptionText>
+      <nc:DescriptionText>
+         This IEPD shows how to create a basic extension schema file with one element that reuses a NIEM Core type, using a superhero as an example.
+      </nc:DescriptionText>
       <c:MPDInformation>
          <c:AuthoritativeSource>
             <nc:EntityOrganization>
@@ -26,16 +28,16 @@
         </c:XMLSchemaValid>
         <c:IEPSampleXMLDocument c:pathURI="iep-sample/SuperHero.xml"/>
       </c:IEPConformanceTarget>
-      <c:ReadMe c:pathURI="readme.txt"/>
+      <c:ReadMe c:pathURI="readme.md"/>
       <c:XMLCatalog c:pathURI="base-xsd/niem/xml-catalog.xml"/>
       <c:Wantlist c:pathURI="base-xsd/niem/wantlist.xml"/>
       <c:IEPSampleXMLDocument c:pathURI="iep-sample/SuperHero.xml"/>
       <c:ExtensionSchemaDocument c:pathURI="base-xsd/extension/SuperHero-extension.xsd"/>
       
-      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/appinfo/4.0/appinfo.xsd"/>
-      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/conformanceTargets/3.0/conformanceTargets.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/utility/appinfo/4.0/appinfo.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/utility/conformanceTargets/3.0/conformanceTargets.xsd"/>
       <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/niem-core/4.0/niem-core.xsd"/>
       <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/proxy/xsd/4.0/xs.xsd"/>
-      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/structures/4.0/structures.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/utility/structures/4.0/structures.xsd"/>
    </c:MPD>
 </c:Catalog>
